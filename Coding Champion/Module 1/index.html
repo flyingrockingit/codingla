@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <fieldset>
+    <h1> Sign In Form </h1>
+    <p> Enter your name:</p>
+    <input type="name">
+    <p> Enter your age: </p>
+    <input type="number">
+    <p> Enter your favorite color </p>
+    <input type="color">
+    <p> Enter your school: </p>
+    <input type="name">
+    <p> Enter your email </p>
+    <input type="email" id="email">
+    <p id="d1"> </p>
+    <p> Enter your password </p>
+    <input type="password" id="password">
+    <p id="d2"> </p>
+    <br> </br>
+    <input type="submit" onclick="valid()">
+</fieldset>
+<script>
+    email=document.getElementById("email").value
+    password=document.getElementById("password").value
+function valid() 
+{
+    if(email=="") {
+        document.getElementById ("d1") .innerHTML ="enter your email"
+    }
+    
+}
+</script>
+</body>
+</html>
