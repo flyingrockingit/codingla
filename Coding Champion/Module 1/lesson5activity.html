@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Lesson 5: Forms  </title>
+    </head>
+    <body>
+    <fieldset style="color: coral;"> 
+        <h2 style="color: rgb(83, 86, 185);"> Enter your subject marks: </h2>
+<form oninput="x.value=(parseInt(n1.value)+parseInt(n2.value)+parseInt(n3.value))/3">
+    <br>
+    <select>
+        <option> ICT </option>
+        <option> Maths </option>
+        <option> Physics </option>
+    </select>
+<input type="number" placeholder="Enter your total marks"name="n1" id="n1">
+<br>
+<br>
+<select>
+    <option> ICT </option>
+    <option> Maths </option>
+    <option> Physics </option>
+</select>
+<input type="number" placeholder="Enter your total marks"name="n2" id="n2">
+<br>
+<br>
+<select>
+    <option> ICT </option>
+    <option> Maths </option>
+    <option> Physics </option>
+</select>
+<input type="number" placeholder="Enter your total marks"name="n3" id="n3">
+<br>
+<br>
+Average <output name="x" for="n1 n2 n3"></output>
+</form>
+    </fieldset>
+    </body>
+</html>
