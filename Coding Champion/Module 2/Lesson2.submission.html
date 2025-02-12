@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading Effects</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom, rgb(183, 255, 255), rgb(48, 48, 59), rgb(139, 24, 24));
+        }
+        #gradient {
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            color: white;
+            font-family: Arial, sans-serif;
+            animation: colorChange 3s infinite alternate ease-in-out;
+        }
+        @keyframes colorChange {
+            0% { background-image: rgb(39, 128, 236); }
+            25% { background-color: rgb(48, 220, 230); }
+            50% { background-color: rgb(49, 75, 105); }
+            75% { background-color: rgb(26, 72, 107); }
+            100% { background-color: rgba(42, 184, 184, 0.658); }
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="gradient">Animated Box</div>
+</body>
+</html>
