@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avni Roy | Digital Creator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Trebuchet MS', sans-serif;
+            background: linear-gradient(135deg, rgb(43, 43, 80), rgb(4, 112, 158));
+            color: rgb(255, 210, 12);
+            text-align: center;
+            overflow: auto; /* Enables scrolling */
+        }
+
+        h1 {
+            font-size: 3em;
+            text-transform: uppercase;
+            text-shadow: 0px 0px 15px rgb(0, 0, 0), 0px 0px 30px rgb(32, 32, 165);
+            animation: glow 1s infinite alternate ease-in-out;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0px 0px 15px rgb(230, 230, 230), 0px 0px 30px blue; }
+            to { text-shadow: 0px 0px 25px rgb(0, 0, 0), 0px 0px 40px rgb(30, 250, 129); }
+        }
+
+        .box {
+            width: 500px;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.3);
+            margin: 20px;
+            max-height: 300px;
+            overflow-y: auto; 
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: gold;
+            color: black;
+            font-size: 1em;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: rgb(235, 223, 223);
+        }
+    </style>
+</head>
+<body>
+ <h1>Avni Roy</h1>
+<div class="box">
+    <p style="font-size: large;color:gainsboro;">
+        I am a girl who will be turning 18 soon. I come from a Bengali family, which includes myself, my sibling, and my parents. We've been living in Mombasa, Kenya for the longest time ever.  
+    
+        Right now, I'm an 11th-standard student aspiring to pursue CS - Computer Science. I like  creating digital solutions, but I also have a deep passion for cooking. If life had taken a different turn, I might have become a chef instead!  
+    
+        In my free time, I enjoy watching films especially on the big screen. Also, I adore exploring and eating new cuisines of a variety of cultures. I'm an ambivert, which means I can be social but also love my quiet moments. 
+        
+        My favorite motto according to my zodiac sign is: "To let them be and let them do things at their own pace"
+    
+        If you want to know more, click below. Thank you for reading!
+    </p>
+    
+    <button onclick="alert('More about me coming soon!')">Learn More </button>
+</body>
+</html>
