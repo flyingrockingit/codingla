@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4 CSS: Advanced Selectors, Pseudo Classes, and Pseudo Elements    </title>
+    <style>
+    input[type="text"] {
+color: rgb(243, 243, 243);
+background-color: black;
+    }
+    input[type="email"] {
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+    }
+    ul>li {
+        color: darkgoldenrod;
+        font-size: x-large;
+    }
+    h2+p {
+        color: cornflowerblue;
+    }
+    a { 
+        font-size: xx-large;
+    }
+    a:hover {
+        color: chocolate;
+        background-color: darkorange;
+    }
+    a:active {
+        background-color: darkorange;
+    }
+    div:not(.d5) {
+        background-color: darkviolet;
+        border: 2px solid dimgray; 
+    }
+    .d1::before {
+content:"Hi👊🏻"
+    }
+    .d2::after {
+        content:"Bye😭"
+    }
+    .d3::before {
+content:"Hi👊🏻"
+    }
+    .d4::after {
+        content:"Bye😭"
+    }
+    p::first-letter {
+        font-size: 200px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    li:nth-child(2) {
+        color: coral;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    Name <input type="text"> 
+    Email ID <input type="email"> 
+    <h1> Child Selector</h1>
+    <ul>
+        <li> Children 1 </li>
+        <li> Children 2</li>
+    </ul>
+<h2> Sibling Selector </h2>
+<p> Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media</p>
+<p> Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media</p>
+<h3> Hover</h3>
+<a href="#"> Demo</a>
+<h1> Pseudo Elements</h1>
+<div class="d1"> A</div>
+<div class="d2">A</div>
+<div class="d3">R</div>
+<div class="d4">O</div>
+<div class="d5">Y</div>
+</body>
+</html>
