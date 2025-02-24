@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Pseudo Classes Presentation </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(to right, #ff7451, #feb47b, #86a8e7);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: lightblue;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input:focus {
+            border: 2px solid blue;
+            outline: none;
+        }
+        .text-section p:nth-child(2) {
+            color: rgb(0, 206, 162);
+        }
+        .text-section p:first-child {
+            font-weight: bold;
+        }
+        .text-section p:last-child {
+            font-style: italic;
+        }
+        input[type="checkbox"] + label {
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        input:checked + label {
+            color: green;
+            font-weight: bold;
+        }
+
+        .box-container {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .box-container div {
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .box-container div:hover {
+            transform: scale(1.05);
+        }
+        .box-container .standard {
+            background-color: #ddd;
+            color: #333;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .box-container .special {
+            background-color: #ffcc00;
+            color: #000;
+            box-shadow: 2px 2px 15px rgba(255, 204, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pseudo Classes </h1>
+        
+        <button>Hover over me</button>
+        
+        <input type="text" placeholder="Focus on me">
+        
+        <div class="text-section">
+            <p>First paragraph </p>
+            <p>Second paragraph </p>
+            <p>Last paragraph </p>
+        </div>
+        
+        <input type="checkbox" id="check1">
+        <label for="check1">Check me</label>
+        
+        <div class="box-container">
+            <div class="standard">Standard Box</div>
+            <div class="special">This is a highlighted special box</div>
+            <div class="standard">Additional Standard Box</div>
+        </div>
+    </div>
+</body>
+</html>
