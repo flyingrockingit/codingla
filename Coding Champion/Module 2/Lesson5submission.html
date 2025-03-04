@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bollywood Rom-Com Favorites</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+
+        .form-box {
+            background: white;
+            width: 400px;
+            padding: 20px;
+            margin: 50px auto;
+            border: 2px solid #333;
+            border-radius: 10px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            margin: 10px 0;
+        }
+
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #999;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-bottom: 12px;
+        }
+
+        .checkbox-group {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .checkbox-group img {
+            width: 80px;
+            height: 100px;
+            margin-right: 15px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .checkbox-group img:hover {
+            transform: scale(1.15);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #ff5733;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #c70039;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h2>Bollywood Rom-Com Favorites</h2>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>          
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label>Select Your Favorite Rom-Coms:</label>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" name="movies" value="Jab We Met">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSOc-_Xlm0ir0Gv2pZzuAZDCboFLmh2B_25w&s" alt="Jab We Met">
+                    Jab We Met
+                </label>
+                <label>
+                    <input type="checkbox" name="movies" value="Yeh Jawaani Hai Deewani">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxQ20o9lCTKQ8_3Ib6D--cw_QTS1ZtqqSOyA&s" alt="Yeh Jawaani Hai Deewani">
+                    Yeh Jawaani Hai Deewani
+                </label>
+                <label>
+                    <input type="checkbox" name="movies" value="Wake Up Sid">
+                    <img src="https://jmmnewaov2.wordpress.com/wp-content/uploads/2013/12/wus-cver.jpeg?w=640" alt="Wake Up Sid">
+                    Wake Up Sid
+                </label>
+                <label>
+                    <input type="checkbox" name="movies" value="Guest Inn London">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMGE0Mzc0YzEtZTViNi00ZmIzLTgyMGQtYTUzZGMyMGRjMTA4XkEyXkFqcGc@._V1_.jpg" alt="Guest Inn London">
+                    Guest Iin London
+                </label>
+                <label>
+                    <input type="checkbox" name="movies" value="Salaam Namaste">
+                    <img src="https://preview.redd.it/salaam-namaste-was-ahead-of-its-time-v0-033mg55yjcrc1.jpeg?auto=webp&s=ef6cff0b0c737922d41996a7373ef5f8ae52310f" alt="Salaam Namaste">
+                    Salaam Namaste
+                </label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
