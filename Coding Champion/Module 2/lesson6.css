@@ -1,0 +1,31 @@
+#static {
+    position: static;
+    background-color: lightblue;
+    padding: 20px;
+    border: 25px solid rgb(124, 124, 247);
+    margin-bottom: 20px;
+}
+#sticky {
+    position: static;
+    background-color: rgb(20, 83, 104);
+    padding: 20px;
+    border: 15px solid rgb(0, 0, 0);
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+#relative {
+position: relative;
+border: 5px solid lightcoral;
+top: 10%;
+margin-left: 50px;
+background-color: rgb(198, 160, 235);
+color: rgba(19, 37, 9, 0.655);
+}
+#fixed {
+    position: fixed;
+    border: 12px solid darkred;
+    margin-right: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    background-color: rgb(236, 148, 116);
+}
