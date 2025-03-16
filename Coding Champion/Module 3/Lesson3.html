@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Containers with Borders</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .custom-container {
+            border: 5px solid rgb(28, 126, 255); 
+            border-radius: 10px; 
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 
+        }
+        .custom-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Fixed Width -->
+    <div class="container bg-success text-white p-3 mt-3 custom-container">
+        <h2 class="display-4 text-center">Fixed Width Container</h2>
+        <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum quod magni modi quas nisi, enim fugiat nesciunt. Nemo, maiores magnam?</p>
+    </div>
+
+    <!-- Full Width -->
+    <div class="container-fluid bg-danger text-white p-3 mt-3 custom-container">
+        <h2 class="display-4 text-center">Full Width Container</h2>
+        <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum quod magni modi quas nisi, enim fugiat nesciunt. Nemo, maiores magnam?</p>
+    </div>
+
+    <!-- Responsive Containers -->
+    <div class="container-sm bg-warning text-dark p-3 mt-3 custom-container">
+        <h2 class="display-5 text-center">Small Responsive Container</h2>
+        <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="container-md bg-warning text-dark p-3 mt-3 custom-container">
+        <h2 class="display-5 text-center">Medium Responsive Container</h2>
+        <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="container-lg bg-warning text-dark p-3 mt-3 custom-container">
+        <h2 class="display-5 text-center">Large Responsive Container</h2>
+        <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    </div>
+</body>
+</html>
