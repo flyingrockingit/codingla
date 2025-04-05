@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4 - bootstrap utilities - part 1</title>
+</head>
+<body>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    button {
+height: 90px;
+width: 100px;
+    }
+    .container span {
+        font-size: 65px;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        align-content: center;
+    }
+    .badge {
+            border-radius: 50%;
+            padding: 0.5em 0.75em;
+        }
+</style>
+</head>
+<body>
+<div class="container mt-5"></div>
+<p style="font-weight: 1000; font-size: xx-large;"> Bootstrap utilities</p>  
+    <div class="jumbotron jumbotron-fluid text-center">
+    <h2> Jumbotron </h2>
+    <h1 class="display-4">Welcome Here!</h1>
+    <p>This is a simple jumbotron example using Bootstrap.</p>
+<br>
+<hr>
+ <div class="container mt-4">
+    <h2>Buttons</h2>
+    <button class="btn btn-success">Success Button</button>
+<br>
+<br>
+    <button class="btn btn-danger">Danger Button</button>
+    <br>
+    <br>
+    <button class="btn btn-warning">Warning Button</button>
+    <br>
+    <br>
+    <button class="btn btn-info">Info Button</button>
+  </div>
+  <br>
+  <br>
+  <hr>
+  <h2>Badges</h2>
+  <div class="container"></div>
+  <button class="btn btn-info"> <span class="badge bg-danger"> 1.</span>Info Button</button>
+  <button class="btn btn-warning">Warning Button <span class="badge bg-warning"> 2. </span></button>
+<button class="btn btn-success">Success <span class="badge bg-primary"> 4. </span> button</button>
+</div>
+  <hr>
+  <h2>Progress Bar </h2>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
+  </div>
+</div>
+<br>
+</body>
+</html>
