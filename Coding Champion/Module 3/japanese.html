@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Japanese Cuisine</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    .card-row {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .card {
+      flex: 0 0 auto;
+      width: 18rem;
+    }
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+    .page-link {
+  color: #0d6efd; 
+  background-color: #fff;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.page-link:hover {
+  background-color: #0d6efd;
+  color: #fff;
+  border-color: #0d6efd;
+  transform: scale(1.05);
+}
+
+.page-item.active .page-link {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: #fff;
+  font-weight: bold;
+}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+  <a class="navbar-brand" href="Lesson5submission.html">World Cuisines</a>
+  <div class="navbar-nav">
+    <a class="nav-link" href="italian.html">Italian</a>
+    <a class="nav-link active" href="japanese.html">Japanese</a>
+    <a class="nav-link" href="mexican.html">Mexican</a>
+    <a class="nav-link" href="favorite.html">Favorite</a>
+  </div>
+</nav>
+
+<div class="container my-4">
+  <h2 class="mb-4">Japanese Cuisine
+    <span class="badge rounded-pill bg-light border ms-2">
+        <img src="https://flagcdn.com/w40/jp.png" alt="Japan Flag" style="width: 30px;">
+      </span>
+  </h2>
+
+  <div class="card-row">
+    <div class="card">
+      <img src="https://tb-static.uber.com/prod/image-proc/processed_images/d88435af3de0ed40c61b8293ed95d283/719c6bd2757b08684c0faae44d43159d.jpeg" class="card-img-top" alt="Sushi">
+      <div class="card-body">
+        <h5 class="card-title">Sushi</h5>
+        <p class="card-text">Delicate rolls with rice, fish, and seaweed.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMIepz2ae9Apf9z8L0LpzrLNFT0Wcv5_nHiQ&s class="card-img-top" alt="Ramen">
+      <div class="card-body">
+        <h5 class="card-title">Ramen</h5>
+        <p class="card-text">Warm and hearty noodle soup with broth.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://www.webstaurantstore.com/uploads/blog/2023/1/bento-box_what-is-bento.jpg" class="card-img-top" alt="Bento Box">
+      <div class="card-body">
+        <h5 class="card-title">Bento Box</h5>
+        <p class="card-text">Balanced meal with rice, meat, and veggies.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://www.thespruceeats.com/thmb/CkzlxmRyeK8IUrMrHrbq73RX4g4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/basic-tempura-for-fish-and-seafood-1300531-hero-01-bbd91b4ee23940749fec5ab7693eadcc.jpg" class="card-img-top" alt="Tempura">
+      <div class="card-body">
+        <h5 class="card-title">Tempura</h5>
+        <p class="card-text">Lightly battered and deep-fried shrimps.</p>
+      </div>
+    </div>
+  </div>
+  <nav class="d-flex justify-content-center mt-4">
+    <ul class="pagination">
+      <li class="page-item active"><a class="page-link" href="Lesson5submission.html">1</a></li>
+      <li class="page-item"><a class="page-link" href="italian.html">2</a></li>
+      <li class="page-item"><a class="page-link" href="japanese.html">3</a></li>
+      <li class="page-item"><a class="page-link" href="mexican.html">4</a></li>
+      <li class="page-item"><a class="page-link" href="favorite.html">5</a></li>
+    </ul>
+  </nav>
+</div>
+
+</body>
+</html>
