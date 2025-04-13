@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lesson 1: JavaScript</title>
+  <style>
+    .button {
+      border: 4px solid #555;
+      padding: 10px 20px;
+      margin: 5px;
+      background-color: #000000;
+      cursor: pointer;
+      font-size: 26px;
+      border-radius: 10px;
+      color:cadetblue;
+    }
+
+    .button:hover {
+      background-color: #ffaa001d;
+    }
+
+    img {
+      margin: 22px;
+    }
+  </style>
+</head>
+<body>
+  <br>
+<hr>
+  <p id="demo JavaScript" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: xx-large; text-align: center;"></p>
+  <p id="demo-JavaScript" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: xx-medium; text-align: left;"></p>
+  <button class="button" onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">
+    Turn on the light
+  </button>
+
+  <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:120px">
+
+  <button class="button" onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">
+    Turn off the light
+  </button>
+<hr>
+  <script>
+    document.getElementById("demo JavaScript").innerHTML = "My First JavaScript";
+    document.getElementById("demo-JavaScript").innerHTML = "Yes it works!"
+  </script>
+</body>
+</html>
