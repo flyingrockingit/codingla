@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Creative Math Display</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #74ebd5, #9face6);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .results {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(221, 212, 212, 0.2);
+      padding: 30px 40px;
+      width: 350px;
+      text-align: center;
+      color: #000000;
+      animation: slideUp 0.8s ease;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 26px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 12px 0;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px 15px;
+      border-radius: 12px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="results">
+    <h2>📊 Math Operations</h2>
+    <p id="result1"></p>
+    <p id="result2"></p>
+    <p id="result3"></p>
+    <p id="result4"></p>
+  </div>
+
+  <script>
+    var a = 8;
+    var b = 4;
+    var c = 20;
+    var d = 12;
+
+    var sum = a + b;
+    var product = d * b;
+    var difference = d - a;
+    var division = c / b;
+
+    document.getElementById("result1").innerHTML = "➕ Sum of a + b = " + sum;
+    document.getElementById("result2").innerHTML = "✖️ Product of d × b = " + product;
+    document.getElementById("result3").innerHTML = "➖ Difference of d - a = " + difference;
+    document.getElementById("result4").innerHTML = "➗ Division of c ÷ b = " + division;
+  </script>
+</body>
+</html>

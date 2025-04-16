@@ -1,31 +1,34 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Variables and Operators </title>
-    </head>
-    <body>
-    <h1>Variables and Operators </h1>
-    <p id="results 1"></p>
-    <p id="results 2"></p>
-    <p id="results 3"></p>
-    <p id="results 4"></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple JS Example</title>
+</head>
+<body>
+
+    <h2>Math with JavaScript</h2>
+
+    <p id="result1"></p>
+    <p id="result2"></p>
+    <p id="result3"></p>
+    <p id="result4"></p>
 
     <script>
-        // Declare a variable
-        var x= 12
-        var y= 20
-        var z= 40
-        var t = 70
-        var sum=x+y
-        var product = t*x
-        var difference = t-y
-        var division= z/y
-            document.getElementById("results 1").innerHTML = "the sum of x+y="+ sum
-            document.getElementById("results 2").innerHTML = "the product of t*x="+ product
-            document.getElementById("results 3").innerHTML = "the difference of t-y="+ difference
-            document.getElementById("results 4").innerHTML = "the division of z/y="+ division
+        var a = 15;
+        var b = 5;
+        var c = 10;
+        var d = 25;
+
+        var sum = a + b;
+        var product = d * b;
+        var difference = d - a;
+        var division = c / b;
+
+        document.getElementById("result1").innerHTML = "The sum of a + b = " + sum;
+        document.getElementById("result2").innerHTML = "The product of d * b = " + product;
+        document.getElementById("result3").innerHTML = "The difference of d - a = " + difference;
+        document.getElementById("result4").innerHTML = "The division of c / b = " + division;
     </script>
-    </body>
-    </html>
+
+</body>
+</html>
