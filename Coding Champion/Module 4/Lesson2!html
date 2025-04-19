@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JavaScript 2</title>
+</head>
+<body>
+    <h1>Scope Variable</h1>
+    <p id="mydemo"> </p>
+    <p id="mydemo2"> </p>
+    <p id="mydemo3"></p>
+    <script>
+        var b=7 // universal variable
+        function MyFunction () {
+            var x=2 // local variable
+            document.getElementById ("mydemo").innerHTML=b/x
+            document.getElementById ("mydemo3").innerHTML=x
+        }
+        MyFunction()
+        document.getElementById ("mydemo2").innerHTML= b
+    </script>
+</body>
+</html>
