@@ -5,7 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction to Methods, Loops and Switches in JavaScript</title>
 </head>
+<style>
+    h3 {
+        color: blueviolet;
+    }
+</style>
 <body>
-    
+    <h2>JavaScript Methods</h2>
+    <p>Methods are functions associated with objects in JavaScript. They are used to perform actions on or with object data.</p>
+    <h3 style="text-align: center;"> JavaScript Strings</h3>
+    <script>
+        var str="AmAzInG"
+        document.write(str.toUpperCase());
+        document.write("<br>")
+        document.write(str.toLowerCase());
+        document.write("<br>")
+        document.write(str.startsWith("A"));
+        document.write("<br>")
+        </script>
+    <hr>
+    <h2>JavaScript Loops</h2>
+    <p>Loops allow you to run the same block of code multiple times. Common types are for, while,  and do-while loops.</p>
+    <p id="demo"></p>
+    <script>
+        var fruits= ["Watermelon", "Mangoes", "Oranges" , "Pineapple"]
+        var text="";
+        var i;
+        for (i=0;i<fruits.length; i++) {
+            text += fruits[i] + "<br>";
+}
+        document.getElementById("demo").innerHTML= text;
+    </script>
+    <hr>
+    <h2>JavaScript Switch Statements</h2>
+    <p>Switch statements are used to perform different actions based on different conditions.</p>
+<p id="demo2"> </p>
+<script>
+    let day;
+    switch (new Date().getDay()) {
+      case 0:
+        day = "Sunday";
+        break;
+      case 1:
+        day = "Monday";
+        break;
+      case 2:
+        day = "Tuesday";
+        break;
+      case 3:
+        day = "Wednesday";
+        break;
+      case 4:
+        day = "Thursday";
+        break;
+      case 5:
+        day = "Friday";
+        break;
+      case  6:
+        day = "Saturday";
+    }
+    document.getElementById("demo2").innerHTML = "Today is " + day;
+    </script>
+    <hr>
 </body>
 </html>
