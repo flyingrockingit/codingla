@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2 Submission</title>
+<style>
+    button {
+        color: white;
+        border-radius: 30px; 
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 10px 26px;
+        margin: 15px;
+        background-color: rgb(45, 170, 243);
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: rgb(33, 126, 196);
+    }
+    body {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkGV7IzIJ4LZgpvq5LMsHkYHu763RyY3T9sg&s);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        color: rgb(107, 114, 102);
+        font-family: 'Arial', sans-serif;
+    }
+    h1 {
+        color: rgb(1, 1, 1);
+        text-align: center;
+    }
+    p {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .container {
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Multiplication Using Functions</h1>
+
+        <p>Click a button to multiply a number by y (y =20)</p>
+
+        <button onclick="multiply(5)">Multiply 5 × y</button>
+        <button onclick="multiply(7)">Multiply 7 × y</button>
+        <button onclick="multiply(10)">Multiply 10 × y</button>
+        <button onclick="multiply(8)">Multiply 8 × y</button>
+
+        <p id="result"></p>
+    </div>
+
+    <script>
+        // Global variable
+        var y = 20; 
+
+        function multiply(x) {
+            // Local variable
+            var result = x * y;
+
+            document.getElementById('result').innerHTML = `Result: ${x} × ${y} = ${result}`;
+        }
+    </script>
+</body>
+</html>
