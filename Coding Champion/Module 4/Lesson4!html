@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Objects in JavaScript</title>
+</head>
+<body>
+    <h1 style="text-align: center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: rgb(125, 18, 39);">JS Argument Objects</h1>
+    <p id="demo" style="color: rgb(179, 134, 221); text-align: left; font-size: 20px; font-weight: bolder;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eum illum, harum esse velit dolores impedit, soluta sed in eveniet praesentium ex autem. Exercitationem ullam voluptatem neque provident odio saepe!</p>
+    
+    <script>
+        function findMax() {
+            var i;
+            var max = 0; 
+            for (var i = 0; i < arguments.length; i++) {
+                if (arguments[i] > max) {
+                    max = arguments[i];
+                }
+            }
+            return max;  
+        }
+        var result = findMax(5, 12, 3, 8, 20, 1);
+        document.getElementById("demo").innerHTML = "The maximum value is: " + result;
+    </script>
+</body>
+</html>

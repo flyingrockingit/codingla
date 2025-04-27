@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Objects in JavaScript</title>
+</head>
+<body>
+    <h1 style="text-align: center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: rgb(125, 18, 39);">JS Math Objects</h1>
+    <button onclick="showRandom()"> SHOW ME ANY RANDOM NUMBER </button>
+    <p id="demo"></p>
+    <script>
+    function showRandom(){
+        const randomNumber=Math.floor(Math.random()*10000)
+    document.getElementById("demo").innerHTML=randomNumber
+    }
+    </script>
+</body>
+</html>
