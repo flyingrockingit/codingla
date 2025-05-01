@@ -1,10 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>METHODS AND LOOPS</title>
+  <meta charset="UTF-8">
+  <title>METHODS AND LOOPS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 20px;
+    }
+    .box {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 500px;
+      margin: auto;
+    }
+    h2 {
+      color: #ff0303;
+    }
+  </style>
 </head>
 <body>
+  <div class="box">
+    <h2>DDT- Date, Day and Time</h2>
+    <div id="output"></div>
+    <hr>
+    <br>
+    <h2> RN- Random Numbers</h2>
+    <div id="randomNumbers"></div>
+    <hr>
+    <br>
+    <h2>Fruit List with String Methods</h2>
+    <div id="fruitMethods"></div>
+    <hr>
+    <br>
+  </div>
+  <script>
+    function getDayName() {
+      switch (new Date().getDay()) {
+        case 0: return "Sunday";
+        case 1: return "Monday";
+        case 2: return "Tuesday";
+        case 3: return "Wednesday";
+        case 4: return "Thursday";
+        case 5: return "Friday";
+        case 6: return "Saturday";
+      }
+    }
+    let day = getDayName();
+    let currentTime = new Date().toLocaleTimeString();
+    let currentDate = new Date().toLocaleDateString();
+document.getElementById("output").innerHTML = `
+      <p>Today is <strong>${day}</strong>, the date is <strong>${currentDate}</strong> and the time is <strong>${currentTime}</strong>.</p>
+    `;
+    let randomNumbers = [];
+    for (let i = 0; i < 5; i++) {    randomNumbers.push(Math.floor(Math.random() * 100) + 1); 
+    }    document.getElementById("randomNumbers").innerHTML = `
+      <p><strong>Random Numbers:</strong> ${randomNumbers.join(", ")}</p>
+    `;
+    var fruits = ["Watermelon", "Mangoes", "Oranges", "Pineapple"];
+    var text = "";
+    for (var i = 0; i < fruits.length; i++) {
+      var fruit = fruits[i];
+      text += `
+        <p><strong>Original:</strong> ${fruit}</p>
+        <p><strong>Uppercase:</strong> ${fruit.toUpperCase()}</p>
+        <p><strong>Lowercase:</strong> ${fruit.toLowerCase()}</p>
+        <p><strong>Starts with 'P' (example):</strong> ${fruit.startsWith("P")}</p>
+      `;
+    }
+document.getElementById("fruitMethods").innerHTML = text;
+  </script>
 </body>
 </html>

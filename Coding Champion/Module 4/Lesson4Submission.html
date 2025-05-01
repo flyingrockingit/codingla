@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUM OF ARGUMENTS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-image:url(https://i.ytimg.com/vi/WumZojQbzEM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLASnLn6Fp0IeYRW8ljHzYCpx9i_VA) ;
+        }
+        form {
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sum and Trigonometric Calculator</h1>
+
+    <form name="myForm">
+        <input type="text" name="myTXT" placeholder="Enter degrees"><br><br>
+        <input type="button" value="Sin" onclick="sinclicked()">
+        <input type="button" value="Cos" onclick="cosclicked()">
+        <input type="button" value="Tan" onclick="tanclicked()">
+        <input type="button" value="Clear" onclick="clearAll()">
+    </form>
+
+    <div id="result" style="margin-top:20px; font-size:28px;"></div>
+</body>
+</html>
