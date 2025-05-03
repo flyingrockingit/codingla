@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Array and Call Stack</title>
+    <style>
+        h2 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        p {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 26px;
+        }
+        ul {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: rgb(96, 96, 191);
+        }
+    </style>
+</head>
+<body>
+    <h2>JavaScript Arrays</h2>
+    <p id="carsdemo"></p>
+    <p id="carsDemoPop"></p>
+    <p id="carsDEMO"></p>
+    <p id="fruitsdemo"></p>
+    <br>
+    <hr>
+    <script>
+        const cars = ["Alto", "Volvo", "BMW", "Mercedes Benz", "Range Rover"];
+        document.getElementById("carsdemo").innerHTML = cars.join(", ");
+        document.getElementById("carsDemoPop").innerHTML = "Popped: " + cars.pop();
+        document.getElementById("carsdemo").innerHTML = cars.join(", ");
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        let fruitList = "<ul>";
+        fruits.forEach(function(fruit) {
+            fruitList += `<li>${fruit}</li>`;
+        });
+        fruitList += "</ul>";
+        document.getElementById("fruitsdemo").innerHTML = fruitList;
+    </script>
+</body>
+</html>
