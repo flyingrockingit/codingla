@@ -26,11 +26,15 @@
     <p id="fruitsdemo"></p>
     <br>
     <hr>
+    <h2>Call Stack</h2>
+    <p id="CallStackDemo"></p>
+
     <script>
         const cars = ["Alto", "Volvo", "BMW", "Mercedes Benz", "Range Rover"];
         document.getElementById("carsdemo").innerHTML = cars.join(", ");
         document.getElementById("carsDemoPop").innerHTML = "Popped: " + cars.pop();
         document.getElementById("carsdemo").innerHTML = cars.join(", ");
+
         const fruits = ["Banana", "Orange", "Apple", "Mango"];
         let fruitList = "<ul>";
         fruits.forEach(function(fruit) {
@@ -38,6 +42,20 @@
         });
         fruitList += "</ul>";
         document.getElementById("fruitsdemo").innerHTML = fruitList;
+        let callStackOutput = "";
+
+        function f1() {
+            callStackOutput += "Hi by f1!<br>";
+        }
+
+        function f2() {
+            f1();
+            callStackOutput += "Hi by f2!<br>";
+        }
+
+        f2();
+
+        document.getElementById("CallStackDemo").innerHTML = callStackOutput;
     </script>
 </body>
 </html>
