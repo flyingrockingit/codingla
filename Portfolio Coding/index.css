@@ -1,0 +1,17 @@
+.profile-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+footer a {
+  text-decoration: none;
+}
