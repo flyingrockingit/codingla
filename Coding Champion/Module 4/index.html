@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wedding Invitation</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+      background: url('https://i.imgur.com/zY9zDg7.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #5a4a42;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      backdrop-filter: blur(2px);
+    }
+
+    .container {
+      background: rgba(255, 250, 245, 0.9);
+      padding: 30px;
+      border-radius: 20px;
+      margin: 40px 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      max-width: 600px;
+      width: 90%;
+    }
+
+    h1 {
+      font-family: 'Cursive', serif;
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+      color: #b08968;
+    }
+
+    .names {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .details, .countdown {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    button {
+      margin: 20px 0;
+      padding: 12px 24px;
+      background-color: #d4bfa3;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #c0a98b;
+    }
+
+    form {
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    audio {
+      margin-top: 10px;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <audio controls autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="container">
+    <h1>You're Invited!</h1>
+    <button onclick="showInvite()">Reveal Invitation</button>
+
+    <div id="invite" class="hidden">
+      <div class="names">Emma & Liam</div>
+      <div class="details">
+        request the honour of your presence<br />
+        at the celebration of their marriage<br /><br />
+        <strong>Saturday, 12th July 2025</strong><br />
+        at 4 o'clock in the afternoon<br /><br />
+        The Rose Garden Estate<br />
+        123 Bloom Lane, Hampshire, UK<br /><br />
+        Reception to follow
+      </div>
+
+      <div class="countdown" id="countdown"></div>
+
+      <form onsubmit="submitRSVP(event)">
+        <h3>RSVP</h3>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" required>
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" min="1" required>
+        <label for="message">Message:</label>
+        <textarea id="message" rows="3" placeholder="Looking forward to it!"></textarea>
+        <button type="submit">Submit RSVP</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function showInvite() {
+      document.getElementById('invite').classList.remove('hidden');
+    }
+
+    function submitRSVP(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const guests = document.getElementById('guests').value;
+      alert(`Thank you, ${name}! We've received your RSVP for ${guests} guest(s).`);
+      e.target.reset();
+    }
+
+    // Countdown logic
+    const countdownElement = document.getElementById("countdown");
+    const weddingDate = new Date("July 12, 2025 16:00:00").getTime();
+
+    setInterval(() => {
+      const now = new Date().getTime();
+      const distance = weddingDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hrs = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const secs = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdownElement.innerHTML = `<br><strong>Countdown:</strong> ${days}d ${hrs}h ${mins}m ${secs}s`;
+
+      if (distance < 0) {
+        countdownElement.innerHTML = "<strong>The big day is here! 🎉</strong>";
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>
